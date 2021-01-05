@@ -21,10 +21,12 @@
     }
     &__phone {
         display: block;
-        text-decoration: none;
         font-size: 18px;
         color: #ffffff;
         font-weight: 700;
+        &:hover {
+            text-decoration: none;
+        }
     }
     &__contacts {
         display: flex;
