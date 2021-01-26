@@ -37,12 +37,20 @@
     }
     &__content {
         margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
         min-height: 415px;
         padding: 20px 20px 26px 20px;
         border: solid 2px #e8e8e8;
+        overflow: hidden;
+        margin-bottom: 20px;
         img {
             display: block;
             margin: 0 auto;
@@ -62,6 +70,7 @@
             font-weight: 500;
             text-align: center;
             color: #0d0d0d;
+            width: 253px;
         }
         &__link {
             display: block;
@@ -71,6 +80,7 @@
             text-align: center;
             color: $main-color;
             text-decoration: underline;
+            text-transform: uppercase;
         }
         hr {
             margin: 19px 0 21px 0;
@@ -93,6 +103,65 @@
             font-size: 20px;
             font-weight: 700;
             color: #050505;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            &_active {
+                margin-right: 20px;
+                transform: translateX(0%);
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+            &_active {
+                margin-left: 0px;
+                transform: translateX(-100%);
+            }
+            li {
+                position: relative;
+                font-size: 14px;
+                font-weight: 300;
+                color: #555555;
+                margin-bottom: 20px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 5px;
+
+                }
+            }
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: $main-color;
+            text-decoration: underline;
+            text-transform: uppercase;
+            
         }
     }
 }

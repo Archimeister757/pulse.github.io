@@ -1,5 +1,6 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
 }
 
 @import 'base/variables';
@@ -12,6 +13,8 @@
 @import 'blocks/forms';
 @import 'blocks/carousel';
 @import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
 @import 'base/media';
 
 body {
