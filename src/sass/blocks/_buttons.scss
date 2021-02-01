@@ -27,4 +27,9 @@
         height: 40px;
         font-size: 14px;
     }
+    &:hover {
+        background-color: rgba(167, 0, 0, 0.945);
+        transition: 0.5s all;
+        box-shadow: 1px 1px 15px darkgray;
+    }
 }

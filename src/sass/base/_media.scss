@@ -92,6 +92,21 @@
             margin-bottom: 70px;
         }
     }
+    .footer {
+        &__info {
+            padding: 45px 45px 25px;
+            width: 380px;
+            height: 230px;
+        }
+        &__addr {
+            font-size: 16px;
+            margin-bottom: 33px;
+        }
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 33px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -116,7 +131,7 @@
         }
     }
     .promo {
-        background-position: -400px 0;
+        background-position: -888px 0;
         &__wrapper {
             align-items: center;
         }
@@ -143,13 +158,17 @@
         &__descr {
             font-size: 18px;
             text-align: center;
+            margin: 50px 0 36px;
         }
     }
     .feed-form {
         margin: 0 auto;
-        input {
-            &:nth-child(1) {
-                margin-top: 36px;
+        &_mt-25 {
+            width: 215px;
+            input {
+                margin: 15px 0 0;
+                height: 40px;
+
             }
         }
     }
@@ -192,6 +211,45 @@
             width: auto;
         }
     }
+    .footer {
+        &__info {
+            padding: 37px 37px 20px;
+            width: 333px;
+            height: 210px;
+        }
+        &__addr {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        &__phone {
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .modal {
+        padding: 38px 30px 40px 30px;
+        width: 300px;
+        min-height: 328px;
+        button {
+            margin-top: 15px;
+            height: 42px;
+            font-size: 13px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            font-size: 35px;
+            right: -29px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -212,7 +270,7 @@
     }
     .promo {
         min-height: 420px;
-        padding: 21px 10px 50px;
+        padding: 21px 10px 50px 10px;
         background-position: -593px 0;
         &__header {
             font-size: 27px;
@@ -235,29 +293,32 @@
         }
     }
     .title {
-        font-size: 24px;
+        font-size: 21px;
     }
     .consultation {
-        min-height: 600px;
-        padding: 50px 10px 40px;
+        min-height: 540px;
+        padding: 40px 10px;
         background-position: -850px 0;
         &__descr {
-            margin-top: 50px;
-            font-size: 14px;
+            margin-top: 36px;
+            font-size: 13px;
         }
     }
     .feed-form {
-        width: 270px;
+        width: 250px;
         input {
             height: 40px;
-            &:nth-child(1) {
-                margin-top: 30px;
-            }
-            
         }
         button {
             height: 40px;
             font-size: 14px;
+        }
+        &_mt-25 {
+            width: 200px;
+            input {
+                margin: 15px 0 0;
+                height: 37px;
+            }
         }
     }
     .carousel {
@@ -277,9 +338,47 @@
         padding-bottom: 65px;
     }
     .reviews {
-        padding: 0 20px 30px 20px;
+        padding: 0 20px;
         &__text {
             width: auto;
+        }
+    }
+    .footer {
+        &__info {
+            bottom: 0;
+            top: auto;  
+            padding: 25px 37px 20px;
+            width: 100%;
+            height: 165px;
+        }
+        &__addr {
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+        &__phone {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
+        }
+        &__devider {
+            width: 100%;
+            height: 2px;
+            background-color: gray;
+        }
+    }
+    .modal {
+        padding: 30px 15px;
+        width: 250px;
+        &__close {
+            font-size: 30px;
+            right: -21px;
+        }
+        button {
+            font-size: 12px;
+            height: 37px;
         }
     }
 }
