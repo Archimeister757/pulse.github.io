@@ -13,7 +13,12 @@
         align-items: center;
     }
     &__icon {
-        margin-top: 65px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__subtitle {
         margin-top: 38px;
@@ -33,5 +38,5 @@
             text-decoration: underline;
             color: #ff0000;
         }
-    }    
+    } 
 }
